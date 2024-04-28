@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+    <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"
+></script>
+<style>
+     #containerfluid {
+        height: 300px;
+        background: rgb(196, 177, 177);
+        width: 100vw;
+        padding: 0px;
+        margin: 0px;
+      }
+      .gg {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .hh {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .ii {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .jj {
+        margin-left: 40px;
+        margin-right: 40px;
+      } 
+      .footer-section {
+        background: #151414;
+        position: relative;
+      }
+      .footer-cta {
+        border-bottom: 1px solid #373636;
+      }
+      .single-cta i {
+        color: #ff5e14;
+        font-size: 30px;
+        float: left;
+        margin-top: 8px;
+      }
+      .cta-text {
+        padding-left: 15px;
+        display: inline-block;
+      }
+      .cta-text h4 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+      .cta-text span {
+        color: #757575;
+        font-size: 15px;
+      }
+      .footer-content {
+        position: relative;
+        z-index: 2;
+      }
+      .footer-pattern img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 330px;
+        background-size: cover;
+        background-position: 100% 100%;
+      }
+      .footer-logo {
+        margin-bottom: 30px;
+      }
+      .footer-logo img {
+        max-width: 200px;
+      }
+      .footer-text p {
+        margin-bottom: 14px;
+        font-size: 14px;
+        color: #7e7e7e;
+        line-height: 28px;
+      }
+      .footer-social-icon span {
+        color: #fff;
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 20px;
+      }
+      .footer-social-icon a {
+        color: #fff;
+        font-size: 16px;
+        margin-right: 15px;
+      }
+      .footer-social-icon i {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50%;
+      }
+      .facebook-bg {
+        background: #3b5998;
+      }
+      .twitter-bg {
+        background: #55acee;
+      }
+      .google-bg {
+        background: #dd4b39;
+      }
+      .footer-widget-heading h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .footer-widget-heading h3::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        height: 2px;
+        width: 50px;
+        background: #ff5e14;
+      }
+      .footer-widget ul li {
+        display: inline-block;
+        /* float: left; */
+        width: 50%;
+        margin-bottom: 12px;
+      }
+      .footer-widget ul li a:hover {
+        color: #ff5e14;
+      }
+      .footer-widget ul li a {
+        color: #878787;
+        text-transform: capitalize;
+      }
+      .subscribe-form {
+        position: relative;
+        overflow: hidden;
+      }
+      .subscribe-form input {
+        width: 100%;
+        padding: 14px 28px;
+        background: #2e2e2e;
+        border: 1px solid #2e2e2e;
+        color: #fff;
+      }
+      .subscribe-form button {
+        position: absolute;
+        right: 0;
+        background: #ff5e14;
+        padding: 13px 20px;
+        border: 1px solid #ff5e14;
+        top: 0;
+      }
+      .subscribe-form button i {
+        color: #fff;
+        font-size: 22px;
+        transform: rotate(-6deg);
+      }
+      .copyright-area {
+        background: #202020;
+        padding: 25px 0;
+      }
+      .copyright-text p {
+        margin: 0;
+        font-size: 14px;
+        color: #878787;
+      }
+      .copyright-text p a {
+        color: #ff5e14;
+      }
+      .footer-menu li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .footer-menu li:hover a {
+        color: #ff5e14;
+      }
+      .footer-menu li a {
+        font-size: 14px;
+        color: #878787;
+      }
+      .aa{
+        height: 1000px;
+      }
+      .bb{
+        text-align: center;
+        margin-top: 50px;
+        font-size: xx-large;
+
+      }
+      .cc{
+        margin-top: 70px;
+        text-align: center;
+
+      }
+      
+
+
+</style>
+</head>
+<div id="containerfluid">
+    <div class="container">
+      <div class="ab">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADGCAMAAADFYc2jAAAB/lBMVEX39/cAAAAdFg7////h4eH29/b6+vrm5ub09/Pv9+3y9/Hz9/L19/WQkJDa2trx9+9Cxy8adAtERETs+Om3t7cImiqZmZkQpSsNoStycnJjY2MAbAAWDQDk+N4fFg3s7OwGlyoarixPT0/S0tInty0YGBjp+OYWqitbW1upqanMzMx6enoNAAAdgA0Ekiosuy03Nzetra0jIyMhjQ0mZQC+vr5HR0cfhw04ODiGhoaTk5MzxRzN58UqawAdEQ4TExMzgicAnhTf99gAjBnR5cvE3L3Q4coAlhQ7sycudAAmIRahi5dQS0Q0KiB/rnpknV6XvZGwz6wwlEd3qnASfyB5uoNSlEk7o07B4rpHkDsSjTEwiCBfnFeKwpGhypo0tj1ox2oMtBGp3ah4xoGIz47Z6908rVBRwlvI7cRUrmKu4qhx0mWZyqW92cR3y3dMpGCGy5NfwGmFx3hiyFGJ1H2Xw3ZVlCBtpj5oz1h0mFZHexu0zp5Vy0EjVgCIsmurzJR0n0ljiD+ww6NDaxF6uFFjqy51mF6croTa5q68042IiF+zo4/OtLs2gwCSj62arLCatpmAyVRdUGZ4aImcn4BLnBqQoWScg4leX1CImXB9hW0iIw4hLw3Hvos5Jy+TnWYfNwgkSgawhpeVaIJkQlB7YW6JkX3IuspvV1ZKRzepmxl6AAAYZ0lEQVR4nO2di19TV7bHT3KSHV4JCDGSGHKQIOYlEGpswkMUEpQ0sTJzbaOtWNBoW9tOH4oVFdFqnZmW3t657djWGe/tvWOv/pd3rb33eZ8EUMFT4Wc/5ZGTffZ3r7XXXvuRgyBsa1vb2ta2trWtbW1rW9va1nrlltVC1WAWe0G57mVX+IVKy05hm5ubm1TBT2oTvIL8Kr2GvVWR2gIq/8uu8guUQs/gdejaFuAN8Krxa+gV+EattA0g87/sSr84aeit4A0N8Krxc+MzehW+cPzN44WOjg5dAzD+9eETURTJBtb/OaUYn9Fz3OO7d+zYsfvNjg6lBRi/Yv41lk5IJhgLxQXbNoBsfA19R8cJpAf+4x1qA6j8a8cnQsyRCqccRZ9d+VV8lb5vB9furr4+nf3B/deFX3I4UeGUx578OuNz+o78bhl/pg/4+2ZOzHRQ/nWan/gZvdPpSIobTfJs0hhfpjfg53fs3r17R6GvlfKvB18MpTi+M7XRHM8ohq8YH+D7+roU/DzgH2Y//WFG6f1rtn57WMZ32NP73TK+hr6v74889L3Z19U3w9vi3/afbG1qXR9+ScWXNprkmUTxFd/n9H1db9GB71RXV1ffrIx/evLtjuZWufOvpXDRK/f9cMmefV9nfIW+q2v2rcNvzU7AN10VBf/0ZHe1oal57fjE4+Dmd2Rs6fuW+F16sb5/+A+nT5/u7My3rAmfSNTaYsaBwS/syNnT+Cq+kb7yx7dOnXqzAt9NnILIfzgP9Ke7O4+MtrDOX7dU0e8I0ExP9MVSDkfWb1N6gXX9Jo6v0kPwO3Xq1I7d72IHqMzO9I2+jvy7dh3Jk1VjH5EiYUc2g7k+ET1RF7Gn5wsKfqsBH+j3v/POO/uBH3+EX5+ZPH26//TOffv2VN2reb8YTKHHx3y0AewLr8Nnvt/Fw93+/a+//vp+4J+lv+l7u59q3549Z1tXwScZFvBTjqRkV6/nssZ/czfQv/baa8h/itKPTjL8XXv29L5HVnH+iDzcO8IBO9vegK/4/o4dlB75d+weRfyTjL5/Z29v79w8qYcvJuXRHhugnLGzA1D8ZgP+hAl/ol8W4A/M9Qm18WXXlxMeR489Ez4qZbGnubVRdX4T/hnu+939e3oHBgbQ/WuWWA5r8Z2pmG3dH6Iyaa0WZj89Bzo//35XB+N/l/d9xD+MQx83fXd39y6gHxjJC7Xwda5P3d+mSx2AXv3o3IXOIyAYzyCm9fZePD+B/Nd55Efjn8GRYJLDd+/cCfRtbZdqIZGEkd6WCR8RGwondx49erSzs3MXaB9tAGiBgffe7+uaeBf59+O4dwqN/wGHB/qdAN/WNtJYq2CD6ztT9uv5hLR8fA7Yd+7s7GT4nB4doHfuvVHKT6e8pyYmJromulV6jv+htfnFnNH4cbsZH3z+ZPdRJFHoVeOjBgbOd03M0kz/DNKj78v0nQy/hveTqIE+PLjZdKuICB+/fXRyZ7cVPcMfgJHtEmC/XxmdoOo62d0v276zs5fit7VYFp41uL7NJrqk6aP+SRXF4PocH/gHzr4/MYqi1n9bsX2njD/SZ1G6uryhDHp2cn3SemZysttEb8DnbVCR+XHYU9+xi+OPms1qcn1bDXqkCeD7+y3p9xnosQEqFH803zWqecsuGf99C3yT69tneZs0UHhrejM8ivLn8/nRSdnz8fKa+GLAaPywXZZ3iRv6fL8FPeY8gH4WBPxzc9DxqY6BzlYYfkWLv6+W8xOfyfUD9jA+ET8+PdlvpEf0C+dmK9VqYysu+DT2deUrH35ydm6O0R87dpGZn+FTevCUgRqhT7OqzW1ftoftxeqfJvuN9Ls6P/ioirvPIib+xK0ud+bnPznL+T8vFAC/MNmt2H7fHobf1my8icn17THokRZ5ukbxOf0Hn87Pnv/sswsXLnz22Sfn5yujHa3uhiakr1anpvKVz89S/vlCQcFn9Bz/SwMacZk6fskW9B+fft1Ar7j+Ph7zsdPP9V48N59vbAV+6O6FQuHWRez+iJ+Htyn0e9osk16xJ2U0ftQO+NWPTv6pf3LSSK+MeJoRfwAi38XzEAumEL9QmL2I7g/4F5jx8dpeHvkMUx4xbjR+yiaDHiFi89SZt1+bXI2eZTtzc2c/mS9MFQozM+ABZ+cq+Xz1g6M7Ffpeq5SfeIz0TodkB+Mz4dT+5FHzNMdAPyB/OfbebIE1wPlPpqamZo9y4+OLVsOeGDO5vk0GPVlEbD2zUzPF1eIrph9gwz4d9D+fwQ4wVZiaqlZV16f4Iwbji2lT3Cu/JMw6Is0fdR61oN+joactcEwZ9oAf8BvPHdHSw6CvwyeS0fZOhy23tWAQ3HXEkOib6AcGjsn6dArpQfJq2MCARdg3u75d97MFgpZchV7ln/uigPCNreeP7FPpv1zN9W0y6FmKVC8cqeP5evMfG5hvRPzGs4ye+r5+0COS05DtOlNBmxofRcSP9h2pS6+2AAyEn+CJppb8XC/HH+kyGD9k6vl2PcbGhT2gtuermrt0CXC/qDY0NQjzc5zeMNMV/WbX99rY+FQk/9mcdnlLVRuf0gy0zV2qtLZOXRppu1FtaUB+K3rcyjfGvchLglqHIA86p8n1jPBtI22X81JTY2tTw2Xg73A3uMn8CPzeOM2nW/m/h0HPoJa+wq3PL87N6ekZOrBXGqVmeoq9wY38TYLbTUbbbvQZJ3oZk+vbY6ZXXw1TVxbGxq6OVuffgyx/TmEfAfRLH+YbBJj9NgM7nuEVLo2MfIlbuqS1xURmcn2nI8Eu6sCEoRF6je3UVLi2OD124MDY4nVCmvLzl9/74sbAwI0bly5/WKm6ofZu9uGlBnrOX2i90TZymbgtdjVN+5kQ9UPU9cn1lZWV6YWr15ZuTTW7bXXGoe/K4gHQ2NiBmwujbJtXcLc0uPkxHDc7u9PSQP+BhPxI28i8BYGF6zsdLnphx8KBm3CP6bGx6cXlpVsVt20awH1r7CatFzjAclX/Epi4Bf/J/7lpY5APRyz3NdxFs+vzQa+6vDg2RpsYG3p6ZWmmalwee0lqun0TqgX4Y2MGeoEedxDQyyk4oLNTPAS7v3ll27ifCXGvKG/otlSrd25/hfDT09P4ZeVu3hYe0PD1AYo/dmDsrsVOHT23QdsAyWl/dwsdFutbpq18p35DF09O3FmkPQDxbx64Z7Uxtvma+vor1venFyp1gpI20qH7txn39AdNrh/OGpIiMnX8K2xr2g3G7trB/IRI9xfRH6FSi7fya4vK5EuM/trfWLi+Muhp3je1yPGnD9z83A74Hpf057/c//r2IkR+iIH3C/nGllXbgOQN0c+8n6kMelo13Jo+wIx/8+ZyzSMhmyeSiZWCf/3m28yd62fePbUIXXLHyo9Xl/JNdLejdiuQyyM687uN+5nqoKe5qHFpZQy9bGzHgcXrDTYwPknDaFUsl54Ec9999+/f37p7b2Eah4HFa+8uLV25LjeDuSH6dDN901a+U3OKiRXQMnFl6fYYHf7HFv6j0iokbHDMhyTK4UOHwmHnw4fl9r/953fxH374+etrywuQo4FWVk5BnjYzU6lUJjpadO2A5leCv5XrO8MSPcHc0VWpXL8+c3zpxxVIMMZWfly4+veff8ikY0E74EfL4UgEK4uKFMuPDj5+4434/aWl5YWFFTpGYUa08iP0iFt0sRdSd/pZRjD/l83cNUQr1/+NbpBduXfvxxVWEJRydfnK7PffPPhXOeX4yTxjeAn4nlI4cggU4Y3gdEaKxfLgwSePf/n55/vHl5avLixCQkjHaojXoAXU1XvLd+/du3LlFuj6rV8chzSCcooPH/7jMF48zd63uLC8dOJO4c///Obxk0eRlCOV89kj75WCSMxbwMncAL8MDT169OjJk59++uWvP//8X3+/dg3a4Z13sEvwzPUAEw7gYw//8d+oX3/99SZKfmVscfH27WtL0EbX//nNt//zv4//9ehRBD/E6k3YZtaThEkqgIfDh6jPRiKyH8AvItAbyo/a//b48eNg8rdfICpAMywvX71KPWBhhUUIRfDjCvONq1fvLoNrFDL/B/r2jQePnzwplyPhcArUPuyxz4e4SSDiBFzApJ7v5B2BtQG0wiEaFJzQIcrZ9idPHj9+8GD4t99+++GH+/dP3D8BAu8/fuvE93fu3Llemfk4MTVVdfmiiUQik/Gn48ngT0/L5YeRsKxiKCHYBx4/WEtjX8mfCQRL2XKRxUAlgKkNofxUBg1mS6AnoOAD1BtcDx4kg/DLEpRULhfltzL6VDhSyrhs9uF14oLYFwmXIEWRXGCzgDdYego1l81lHtD0jcFUpEJc9k8e+2QBejmXjgq26fKK3MkUmKeYITw/EdyeKDRCLhlDZ0D7QRtYNEN4jcIAUkp60y7RfuwgMgw1dIZzmhkdq6fkgmbIBUsl2gxhvnmjOgR17YgmTuh7Spg2ULH89Kk3IRF7sgvY+dFbwyXziUvmDJIE7RD1x9EdStijwSMwhFsZmjs65E+RYrYUy/l9PjxPYVNyKkh70VjFOgeveLIreXwJVCYQCAwPB38KlZ4+LetVCoWCw4EAXBSVJKHupMkucgep9wdWrykxSKLyJBIeiYteItafLNpMJO0MA37oWWcgvydWC+GsR479W1FSCWKVM5XbovjE76SZjw3m3y9DRMqi90fiW9T8Aov9oVfmyWPrE8kU0fuL9j2BtMEKpjCV27Lm9+PMJBzZsmNfKHUIen9sqwb/BE5TwuGtGvwh9UH3L9n7CN6Gia33h8PJrYkvkCR1f/s+SHFjRaj7O8MHjfuSW0SY+eOabNBGHzvZTBFvinb/LTrzw+0+dP/iFh39iK9M+ctbNPkj8Qh1/8GtGv4DEWZ/05mkrSEMf/gY4dIW5RdyuC3lTG1R+xN3APs/xH//luQXhAC1fzgSsNle9CaJxMs0/U8FN3P6Z5+dIZLIpjD/TZUym5cA+1CbdbP6Iq5ginaATZsAkIQDZZPPOxIhUKb7+OFsfHMOoJEY5R+2B79AMqUINkA4EvJvRgMQaZzy22WtnUjD1AHCqUgwuglBScxQ/KxN8CEU+4aLLAcsJhMbHwPEJOW3zwP9iJDIFdmhlWIpvtEfPyMSxXds6E3WJ/xDMmV+2jkWiG7syCzGbWZ+gXaBXKmIY2AqVU5mNvRknjiI+EN26f1MRJASsTI7sxUpB/0u90Y5AWHRz3aTLSL40j/xFkiVnwYzHveGPGmdmd+Gj7IlREqkc7GyE49kpyJZPKbpk1b5vM+6xXr/oN2sT4XPcYumk6VskTVBsVzKBdLqAb4X0A48+Nt2p4Ge5YM2iGWpHzhS+PGXUimYC/ijPh/9sOtzNYPYg/j2XmnANvC4Epn0cJIdci0Wnfi/cqknFoKWeI7QJXpt2vkN4t6Op579XBkUnu98DtsRP+Lb6nG2dWU85vqcAYD46Mj/u8F/wSIeu+W9mysW+rfoJivo2UY+cx/8fUrk+PVkge+yozzrfwtz/kTda8z04pDDhmrfmGLNh+/EDbrT86lnY4q1wB/cmDs9n2IbU6zF0UsPSMK18oDkMUnK4bvaLV6hr6ZZodavPoPY7bySx1wkvuCvdyfW96P8h4OQApmvqRX6MWWKixbhlGbS7Rav0Fdpoumo8eoziN0uIBLTeESHtUTd99K6ePgPPbj2Y1KtwY/h0ycR00eNK12D4RufsyN/5fg1StW3sa5cwXpnjt3OcsOC4ZuLVatK68LHfYovmHlqVI7hi1I0HgBllI+Jy9bXXS25+MuW+Np2lr8loscP5abVj5/jHxdMJHyGj2Rb4hPKYIFPoL7RqMSLMOOLouDCDw4G0lGhrokofjCnDgI9UVGLTwwX96TpTa3wiS8Nc7g0DTJSHAWX+mkoG4eQ5uLlJnhsT+q2gk34hCKkA14aFBLaOxExw8qIsV+b8eOhvTLP3rp/zo5Nl3Rii8ZW1mcXh6LEEl8cVqrBS/X4MbXIZqA5AII+gJEk1Rtp96bYfkVcdRFfoGdcvTSnSWmJpA6OQWQz4euVrXPkwAKfeVoN66O8ojV+gDGr+NSnAuzPaXp5iGELs4GEf1w7GrFZ216lqMRBY6UUfhLVscFMZxX8eksBYo6VkgykM5k0M02P+ILwUfyhm2KavyRC7fdCCMGcU30EuRjUXCuXZInPp7fYWMFkCBxdIlp8fufxmDfuT/gDLLWpeeSOYK3aoT+zvy8humifkYR6zr8ufPnvKFKj0OfwEc8g1JSuz2b1Fj0oP7EooRIG0un0cHBQg59lLw1laGRPQ5jX4eO3uSjhPMy6NZ/0TuKOYAKHBx61iQs7HHr/i7E+33wirBrMC/Gz6cTlkNtZaRwlFjBXgI4dZVaB/3viPHHh3urw8oAmSu1ZnfM7BuOCqDxVgZVlfgyYAoRDGdzAFaUjiShipE6/KPwezutiqWzI4OxylZm5lVdF1vETmqFRGU9deqfCTGRvaFxTVoKIdNTwJaJRH3yDRdfeBIByRSEdkp0tJ8W4s7wQ56edjsTlOKZZjNa8DlcMym9kBdX2WL6h7dO8JrL8W2lKgI/m5MlsLENbthY98gc0A4xjfIjxvRDrc+PzTWjHQWIoiFeZ7dNonkottTsMQ73yxnG97QV1JJCDgxjVxf7Buviiy2Lel3xB1pd7PvtpSF2Nk6vMDY5M49r7kPReRw+NxxjfNK/QltR3ZV4VOfTJwUGnWuuA/HSIYzCUyyWVsTb4gqyvxDLaATV1kPFp6GPpkvap1ESIoxPGcoF4PNSj3cCg+PoMWAxp8InAosx4TzKXCynrOTXWAfkQM+yirSxKfjVEWeL714ev3BUmiEFt7sX7A92VZ99rj+eIUd06lG4F36FJjlhR8iDD8KnjxzIC5RGi3BVqDPz0zkFl9gFjTEbBpzB65+fxuhZ+riY+DPaGycyg0risUI1F+WRa0aDyVomaWn+QSVmzwpvRKuxNaKZXLEG2xqdXx3VTLzroID7zT92QISdciB+1wI/Vxjem3cy3Ysp9NN1ZSesGc36fR1ITYzHoI5gz6/D5RIPdjL61XdfRmT2t8cmQcXxhLU8rgy/qApKSjtAYbcbnAd4a33hnj4zPGk0z++NAezP0YS6auweQgrTrnF+OXRw/jnN9ncWEwTrOb4iiMAg6VHy/4Y2KU9JxMWTk44eM1obPzA/Oz6KPNrrxRjb0Fjq8I75PO1MUNdMfzKS9hnuKPhZFalh/XOefYpT3I9YmlFAdjUUlE/cqPpsmusLWgS8IQ3RVhq63jmsXIlm/6DHEChqKkAK+UdND1fYMP6BvSMHLX6vR94PKiIh5b1AuSS4fw0ZU5ONpWrkRbRIaNzSVVMbbNeLTS6IswOqOpbF+MajvkzQZZRRQab+oNgkouVd2fp/SlyGKC2llzaOG9T2OHh9dihN8cU2uxPEJXZsIeDCFjtL7x4IKviDg1EsJ2Gq4Xqv1RbhmkPbzrMHS1M0C2vAd0FKQoANmNaKQ4b7ao055oGnSaEkieDKadZVafR8rPdTT0zOozXu1kw9KDVfQdhyKixp84kH3lbghwDf2htaFr3Zc4zqm6MG7hhI8GVFBeIAER9sbi8mmPaib8EJfau/paTdsYNWa8KsdmpcVzWrxseX93iAoOex3QV201ifokXszOGvCtbegoEl7XGvAhwakc3fzYgwRE9TZekKhHsWBHV4lposZ1VxBQthuHc/6Qg6dAul6+HC9V1NUAiJATj8csAVjvmasw4da+tH/hrCGIZ9IElnFRIRuW6y250yIt8ZVMEcO6Na7Qn7tki2Rg9oQnf0QbH55sSuj9uJsAKez7XXwMT5G416vdxjXhOmqnBSveUxIj09XJNPenHc4w5Z/qdE8PFRKyTVsuYueQNr6ZgQX3/0BqJk34Dcui2OtM/CC/OhaqEdIWQ4SXfRtuGhP20aMhupWxLgjQBTrioZ0zYhvfC/cWvkoE3y/hmea1H0soex5lkvVLGRblcPfpj4a+1kefSiSTDI7bkgjTPjmSmm+X/9N7SJC4izoDGp/uzr+qyHRlZXjh/avoW4RfN1WgmaFbmvgq1sJOLZktXPOrYAvynlWLB6VdJPO0FbAp2uPkONKxjGHrcDb5WODGySWsnqJBSX1ifTveERbi3DdxmpjiK9ovOoP6cAFKItclLBO0f5q+z4b9yw+F81X1F/9J9TgglPUwE/4eGCTPwq/oUJD6/n5elPtzeJXSrjOFZenVLhwxtdxt8qj+XBFZSjgw4xP8vn5KuiQ5bbrKykixOm0Z1xZDcrGf89z2HVLJK50ki8dDYUCUas86JWWstAn6pZWtrWtbW1rW9va1ra2ta1tbcuu+n90j5qi1EfCXwAAAABJRU5ErkJggg=="
+          alt=""
+          style="border-radius: 50%; margin-top: 20px"
+        />
+      </div>
+      <h1 style="text-align: right; margin-top: -50px; color: white">
+        AYURVEDIC-CARE
+      </h1>
+      <div class="ac">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item gg">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="home.html"
+                    >home</a
+                  >
+                </li>
+                <li class="nav-item hh">
+                  <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item ii">
+                  <!-- <a class="nav-link" href="#">blog</a> -->
+                </li>
+                <li class="nav-item jj">
+                  <a class="nav-link" href="contact.html">contact</a>
+                </li>
+                <li class="nav-item dropdown pp">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown link
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="patient.html"
+                        >patient registration form</a
+                      >
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="#">expert</a></li> -->
+                    <li><a class="dropdown-item" href="emergency.html">emergency</a></li>
+                    <li><a class="dropdown-item" href="covid.html">covid-19</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">disease</a></li> -->
+                    <!-- <li><a class="dropdown-item" href="#">dosage</a></li> -->
+                    <li><a class="dropdown-item" href="health.html">health tips</a></li>
+                    <li>
+                      <a class="dropdown-item" href="feedback.html">feedback and support</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+<body>
+  <div class="aa">
+     <div class="bb">
+        <h1>Emergency </h1>
+        <p>our application provide all metropolication city ambulance number for major emergencies</p>
+        <p>if you have major problem then contact this emergency contact number</p>
+     </div>
+     <div class="cc">
+         <h1>ambulance number</h1>
+         <p>gurugram - 09810146249</p>
+         <p>mumbai - 1800 121 911 911</p>
+         <p>delhi - 102</p>
+         <p>faridbad - 9100907622</p>
+         <p>jaipur - 9100907036</p>
+         <p>alwar - 144 2881131</p>
+         <p>hyderabad - 1800 270 911 911</p>
+         <p>bengaluru - 080-22660000</p>
+         <p>ahmedabad - 07878100900</p>
+         <p>patna - 6202574847</p>
+         <p>noida - 07290047401</p>
+         <p>kanpur - 9100907622</p>
+         <p>jhunjhunu - 18008 908 208</p>
+         <p>mount abu  - 9313710900</p>
+         <p>amritsir - 09999506969</p>
+         <p>goa - 9100907622</p>
+         <p>jodhpur - 9100907622</p>
+         <p>pune - 18008 908 908</p>
+          <p>chandigrah - 112</p>
+          <p>lucknow - 9100907622</p>
+          <p>ghaziabad - 8046039427</p>
+          <p>chennai - 9100907622</p>
+          <p>mathura - 1800 180 1104</p>
+          <p>surat - 7942818034</p>
+          <p>muzaffarpur - 7272811811</p>
+          <p>palwal - 08059429939</p>
+          <p>kolkata - 9100907622</p>
+          <p>Rajkot - 7272811811</p>
+          <p>srinagar - 9622442204</p>
+          <p>manali - 01902 226221</p>
+          <p>shimla 9100907622</p>
+          <p>rishikesh - 7488464198</p>
+          <p>ujjain - 8617202003</p>
+          <p>jhalawad - 97844561141</p>
+          <p>ajmer - 9313710900</p>
+          <p>ayodhya - 18002670170</p>
+
+     </div>
+
+  </div>
+
+    
+
+  
+    
+</body>
+<footer class="footer-section" style="margin-top: 80px;">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>nogawan bus tand 201025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>7891456024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>vaibhavnagpal711@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk_TmHGtSnGfmmc5Pe6nypPwZY6HESmu94GsvG1YtGqiB9GGRc" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>What is Ayurveda in simple words?
+                              Ayurveda | Johns Hopkins Medicine
+                              Ayurveda, a natural system of medicine, originated in India more than 3,000 years ago. The term Ayurveda is derived from the Sanskrit words ayur (life) and veda (science or knowledge). Thus, Ayurveda translates to knowledge of life.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023, All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+</html>
